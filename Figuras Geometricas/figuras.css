@@ -1,0 +1,313 @@
+html{
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(213, 193, 230);
+}
+/* square */
+.main-square-container{
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(177, 141, 207);
+    width: 55%;
+    height: 200px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgb(132, 106, 153);
+}
+.main-square-container input{
+    font-family: monospace;
+    width: 197px;
+    height: 20px;
+    border-radius: 2px;
+    border-style: none;
+    background-color: rgb(217, 202, 230);
+}
+.main-square-container button{
+    text-transform: uppercase;
+    font-family: monospace;
+    height: 22px;
+    border-style: none;
+    border-radius: 2px;
+    background-color: rgb(217, 202, 230);
+    transition: 0.2s;
+}
+.main-square-container button:hover{
+    transform: scale(1.05);
+    background-color: rgb(232, 220, 242);
+}
+.main-square-container h2{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgb(94, 29, 148);
+}
+.main-square-container .main-size-container{
+    width: fit-content;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 1px 8px 5px 8px;
+    height: 60px;
+    background-color:rgb(198, 169, 222);
+}
+.main-title-container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(177, 141, 207);
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-shadow: 1px 1px 5px rgb(94, 29, 148);
+}
+.cuadrado-container{
+    width: 110px;
+    height: 110px;
+    border: 5px solid rgb(48, 14, 78);
+    border-radius: 2px;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 125px;
+    left: 810px;
+}
+.s-1{
+    width: 125px;
+    text-align: center;
+    position: absolute;
+    top: -19px;
+    left: -5px;
+    font-weight: bold;
+}
+.s-2{
+    width: 125px;
+    position: absolute;
+    text-align: center;
+    top: 114px;
+    left: -5px;
+    font-weight: bold;
+}
+.s-3{
+    width: 123px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 48px;
+    left: 60px;
+    transform: rotate(90deg);  
+}
+.s-4{
+    text-align: center;
+    width: 123px;
+    font-weight: bold;
+    position: absolute;
+    top: 48px;
+    left: -74px;
+    transform: rotate(270deg);  
+}
+/* triangle */
+.main-triangle-container{
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(177, 141, 207);
+    width: 55%;
+    height: 300px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgb(132, 106, 153);
+}
+.main-triangle-container input{
+    font-family: monospace;
+    margin-bottom: 10px;
+    width: 197px;
+    height: 20px;
+    border-radius: 2px;
+    border-style: none;
+    background-color: rgb(217, 202, 230);
+}
+.main-triangle-container button{
+    position: relative;
+    left: 30px;
+    text-transform: uppercase;
+    font-family: monospace;
+    height: 22px;
+    border-style: none;
+    border-radius: 2px;
+    background-color: rgb(217, 202, 230);
+    transition: 0.2s;
+}
+.main-triangle-container button:hover{
+    transform: scale(1.05);
+    background-color: rgb(232, 220, 242);
+}
+.main-triangle-container h2{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgb(94, 29, 148);
+}
+.main-triangle-container .main-size-container{
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 1px 0 5px 20px;
+    height: 60px;
+    background-color:rgb(198, 169, 222);
+}
+.triangle-container{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 760px;
+    top: 400px;
+}
+.triangle-container .arrow-up {
+    position: absolute;
+    z-index: 5;
+    width: 0; 
+    height: 0; 
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 150px solid rebeccapurple;;
+}
+.triangle-container .border {
+    z-index: 0;
+    position: relative;
+    bottom: 5.5px;
+    right: 7px;
+    width: 0; 
+    height: 0; 
+    border-left: 87px solid transparent;
+    border-right: 87px solid transparent;
+    border-bottom: 160px solid rgb(48, 14, 78);
+}
+.main-triangle-container hr{
+    z-index: 10;
+    position: absolute;
+    top: 107px;
+    left: 43.5px;
+    width: 70px;
+    background-color: rgb(48, 14, 78);
+    border: 2px solid rgb(48, 14, 78);
+    transform: rotate(90deg);
+}
+.main-triangle-container .hr1{
+    z-index: 10;
+    position: absolute;
+    top: 16px;
+    left: 53px;
+    width: 50px;
+    background-color: rgb(48, 14, 78);
+    border: 2px solid rgb(48, 14, 78);
+    transform: rotate(90deg);
+}
+.main-triangle-container .s-5{
+    text-align: center;
+    width: 180px;
+    position: absolute;
+    right: 85px;
+    bottom: 22px;
+    transform: rotate(298.5deg);
+}
+.main-triangle-container .s-6{
+    text-align: center;
+    position: absolute;
+    bottom: 22px;
+    left: 44px;
+    width: 180px;
+    transform: rotate(61.5deg);
+}
+.main-triangle-container .s-7{
+    text-align: center;
+    position: absolute;
+    right: 35px;
+    top: 158px;
+    width: 170px;
+}
+.main-triangle-container .s-8{
+    text-align: center;
+    width: 70px;
+    z-index: 10;
+    position: absolute;
+    bottom: 27px;
+    left: 45px;
+}
+/* circle */
+.main-circle-container{
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(177, 141, 207);
+    width: 55%;
+    height: 240px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 8px rgb(132, 106, 153);
+}
+.main-circle-container input{
+    font-family: monospace;
+    width: 250px;
+    height: 20px;
+    border-radius: 2px;
+    border-style: none;
+    background-color: rgb(217, 202, 230);
+}
+.main-circle-container button{
+    text-transform: uppercase;
+    font-family: monospace;
+    height: 22px;
+    border-style: none;
+    border-radius: 2px;
+    background-color: rgb(217, 202, 230);
+    transition: 0.2s;
+}
+.main-circle-container button:hover{
+    transform: scale(1.05);
+    background-color: rgb(232, 220, 242);
+}
+.main-circle-container h2{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgb(94, 29, 148);
+}
+.main-circle-container .main-size-container{
+    width: fit-content;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 1px 8px 5px 8px;
+    height: 95px;
+    background-color:rgb(198, 169, 222);
+}
+.main-circle-container .circle-container{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 720px;
+    right: 310px;
+    background-color: rebeccapurple;
+    border: 5px solid rgb(48, 14, 78);
+    border-radius: 50%;
+}
+.circle-container hr{
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    width: 50%;
+    border: 2px solid rgb(48, 14, 78);
+    background-color: rgb(48, 14, 78);;
+}
+.circle-container .s-10{
+    width: 70px;
+    position: absolute;
+    top: 55px;
+    left: 72px;
+}
