@@ -1,313 +1,667 @@
-html{
-    font-family: monospace;
-    margin: 0;
-    padding: 0;
+html {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
 }
-body{
-    display: grid;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(213, 193, 230);
+body {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(213, 193, 230);
 }
-/* square */
-.main-square-container{
-    margin: auto;
-    margin-top: 30px;
-    background-color: rgb(177, 141, 207);
-    width: 55%;
-    height: 200px;
-    padding: 5px;
-    padding-left: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 8px rgb(132, 106, 153);
+/* cuadrado */
+.main-square-container {
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(177, 141, 207);
+  width: fit-content;
+  height: 220px;
+  padding: 10px;
+  border-radius: 10px;
 }
-.main-square-container input{
-    font-family: monospace;
-    width: 197px;
-    height: 20px;
-    border-radius: 2px;
-    border-style: none;
-    background-color: rgb(217, 202, 230);
+.main-square-container .main-content {
+  width: fit-content;
+  position: relative;
+  top: -100px;
 }
-.main-square-container button{
-    text-transform: uppercase;
-    font-family: monospace;
-    height: 22px;
-    border-style: none;
-    border-radius: 2px;
-    background-color: rgb(217, 202, 230);
-    transition: 0.2s;
+.main-square-container .text {
+  position: relative;
+  text-align: center;
+  top: -110px;
 }
-.main-square-container button:hover{
-    transform: scale(1.05);
-    background-color: rgb(232, 220, 242);
+.main-square-container input {
+  position: relative;
+  font-family: monospace;
+  width: 197px;
+  height: 20px;
+  border-radius: 2px;
+  border-style: none;
+  background-color: rgb(217, 202, 230);
 }
-.main-square-container h2{
-    text-transform: uppercase;
-    text-shadow: 1px 1px 5px rgb(94, 29, 148);
+.main-square-container button {
+  position: relative;
+  text-transform: uppercase;
+  font-family: monospace;
+  height: 22px;
+  border-style: none;
+  border-radius: 2px;
+  background-color: rgb(217, 202, 230);
+  transition: 0.2s;
 }
-.main-square-container .main-size-container{
-    width: fit-content;
-    border-radius: 5px;
-    margin-top: 20px;
-    padding: 1px 8px 5px 8px;
-    height: 60px;
-    background-color:rgb(198, 169, 222);
+.main-square-container button:hover {
+  transform: scale(1.05);
+  background-color: rgb(232, 220, 242);
 }
-.main-title-container{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 50px;
-    background-color: rgb(177, 141, 207);
-    text-align: center;
-    display: grid;
-    justify-items: center;
+.main-square-container h2 {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgb(94, 29, 148);
 }
-h1{
-    font-size: 30px;
-    text-transform: uppercase;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-shadow: 1px 1px 5px rgb(94, 29, 148);
+.main-square-container .main-size-container {
+  width: fit-content;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 1px 8px 5px 8px;
+  height: 60px;
+  background-color: rgb(198, 169, 222);
 }
-.cuadrado-container{
-    width: 110px;
-    height: 110px;
-    border: 5px solid rgb(48, 14, 78);
-    border-radius: 2px;
-    background-color: rebeccapurple;
-    position: absolute;
-    top: 125px;
-    left: 810px;
+.main-title-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(177, 141, 207);
+  text-align: center;
+  display: grid;
+  justify-items: center;
 }
-.s-1{
-    width: 125px;
-    text-align: center;
-    position: absolute;
-    top: -19px;
-    left: -5px;
-    font-weight: bold;
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-shadow: 1px 1px 5px rgb(94, 29, 148);
 }
-.s-2{
-    width: 125px;
-    position: absolute;
-    text-align: center;
-    top: 114px;
-    left: -5px;
-    font-weight: bold;
+.main-square-container .s-container {
+  position: relative;
+  top: 40px;
+  left: 330px;
+  height: 100px;
+  width: 120px;
 }
-.s-3{
-    width: 123px;
-    text-align: center;
-    font-weight: bold;
-    position: absolute;
-    top: 48px;
-    left: 60px;
-    transform: rotate(90deg);  
+.cuadrado-container {
+  width: 100%;
+  height: 100px;
+  display: inline-block;
+  background-color: rebeccapurple;
+  border: 5px solid rgb(48, 14, 78);
 }
-.s-4{
-    text-align: center;
-    width: 123px;
-    font-weight: bold;
-    position: absolute;
-    top: 48px;
-    left: -74px;
-    transform: rotate(270deg);  
+.s-1 {
+  margin: auto;
+  width: fit-content;
+  font-weight: bold;
+  position: relative;
+  top: -130px;
 }
-/* triangle */
-.main-triangle-container{
-    margin: auto;
-    margin-top: 30px;
-    background-color: rgb(177, 141, 207);
-    width: 55%;
-    height: 300px;
-    padding: 5px;
-    padding-left: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 8px rgb(132, 106, 153);
+.s-2 {
+  margin: auto;
+  width: fit-content;
+  font-weight: bold;
+  position: relative;
+  top: -17px;
 }
-.main-triangle-container input{
-    font-family: monospace;
-    margin-bottom: 10px;
-    width: 197px;
-    height: 20px;
-    border-radius: 2px;
-    border-style: none;
-    background-color: rgb(217, 202, 230);
+.s-3 {
+  margin: auto;
+  transform: rotate(90deg);
+  width: fit-content;
+  font-weight: bold;
+  position: relative;
+  top: -100px;
+  left: 80px;
 }
-.main-triangle-container button{
-    position: relative;
-    left: 30px;
-    text-transform: uppercase;
-    font-family: monospace;
-    height: 22px;
-    border-style: none;
-    border-radius: 2px;
-    background-color: rgb(217, 202, 230);
-    transition: 0.2s;
+.s-4 {
+  margin: auto;
+  transform: rotate(270deg);
+  width: fit-content;
+  font-weight: bold;
+  position: relative;
+  top: -110px;
+  left: -70px;
 }
-.main-triangle-container button:hover{
-    transform: scale(1.05);
-    background-color: rgb(232, 220, 242);
+/* triangulo */
+.main-triangle-container {
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(177, 141, 207);
+  width: fit-content;
+  height: 300px;
+  padding: 10px;
+  border-radius: 10px;
 }
-.main-triangle-container h2{
-    text-transform: uppercase;
-    text-shadow: 1px 1px 5px rgb(94, 29, 148);
+.main-triangle-container input {
+  font-family: monospace;
+  margin-bottom: 10px;
+  width: 197px;
+  height: 20px;
+  border-radius: 2px;
+  border-style: none;
+  background-color: rgb(217, 202, 230);
 }
-.main-triangle-container .main-size-container{
-    width: 300px;
-    border-radius: 5px;
-    margin-top: 10px;
-    padding: 1px 0 5px 20px;
-    height: 60px;
-    background-color:rgb(198, 169, 222);
+.main-triangle-container button {
+  position: relative;
+  left: 10px;
+  text-transform: uppercase;
+  font-family: monospace;
+  height: 22px;
+  border-style: none;
+  border-radius: 2px;
+  background-color: rgb(217, 202, 230);
+  transition: 0.2s;
 }
-.triangle-container{
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    left: 760px;
-    top: 400px;
+.main-triangle-container button:hover {
+  transform: scale(1.05);
+  background-color: rgb(232, 220, 242);
+}
+.main-triangle-container h2 {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgb(94, 29, 148);
+}
+.main-triangle-container .main-size-container {
+  width: 300px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 1px 0 5px 20px;
+  height: 60px;
+  background-color: rgb(198, 169, 222);
+}
+.main-triangle-container .s-container {
+  position: relative;
+  top: 20px;
+  left: 300px;
+  width: 150px;
+  height: 140px;
+}
+.main-triangle-container .main-content {
+  position: relative;
+  top: -155px;
+}
+.triangle-container {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .triangle-container .arrow-up {
-    position: absolute;
-    z-index: 5;
-    width: 0; 
-    height: 0; 
-    border-left: 80px solid transparent;
-    border-right: 80px solid transparent;
-    border-bottom: 150px solid rebeccapurple;;
+  position: absolute;
+  z-index: 5;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 110px solid rebeccapurple;
 }
 .triangle-container .border {
-    z-index: 0;
-    position: relative;
-    bottom: 5.5px;
-    right: 7px;
-    width: 0; 
-    height: 0; 
-    border-left: 87px solid transparent;
-    border-right: 87px solid transparent;
-    border-bottom: 160px solid rgb(48, 14, 78);
+  z-index: 0;
+  position: relative;
+  bottom: 5.5px;
+  right: 7.8px;
+  width: 0;
+  height: 0;
+  border-left: 78px solid transparent;
+  border-right: 78px solid transparent;
+  border-bottom: 120px solid rgb(48, 14, 78);
 }
-.main-triangle-container hr{
-    z-index: 10;
-    position: absolute;
-    top: 107px;
-    left: 43.5px;
-    width: 70px;
-    background-color: rgb(48, 14, 78);
-    border: 2px solid rgb(48, 14, 78);
-    transform: rotate(90deg);
+.main-triangle-container hr {
+  z-index: 10;
+  position: absolute;
+  top: 78px;
+  left: 43px;
+  width: 50px;
+  background-color: rgb(48, 14, 78);
+  border: 2px solid rgb(48, 14, 78);
+  transform: rotate(90deg);
 }
-.main-triangle-container .hr1{
-    z-index: 10;
-    position: absolute;
-    top: 16px;
-    left: 53px;
-    width: 50px;
-    background-color: rgb(48, 14, 78);
-    border: 2px solid rgb(48, 14, 78);
-    transform: rotate(90deg);
+.main-triangle-container .hr1 {
+  z-index: 10;
+  position: absolute;
+  top: 12px;
+  left: 48px;
+  width: 40px;
+  background-color: rgb(48, 14, 78);
+  border: 2px solid rgb(48, 14, 78);
+  transform: rotate(90deg);
 }
-.main-triangle-container .s-5{
-    text-align: center;
-    width: 180px;
-    position: absolute;
-    right: 85px;
-    bottom: 22px;
-    transform: rotate(298.5deg);
+.main-triangle-container .s-5 {
+  text-align: center;
+  font-weight: bold;
+  width: fit-content;
+  position: relative;
+  left: 15px;
+  top: 40px;
+  transform: rotate(303deg);
 }
-.main-triangle-container .s-6{
-    text-align: center;
-    position: absolute;
-    bottom: 22px;
-    left: 44px;
-    width: 180px;
-    transform: rotate(61.5deg);
+.main-triangle-container .s-6 {
+  text-align: center;
+  font-weight: bold;
+  width: fit-content;
+  position: relative;
+  left: 102px;
+  top: 10px;
+  transform: rotate(60deg);
 }
-.main-triangle-container .s-7{
-    text-align: center;
-    position: absolute;
-    right: 35px;
-    top: 158px;
-    width: 170px;
+.main-triangle-container .s-7 {
+  text-align: center;
+  font-weight: bold;
+  width: fit-content;
+  position: relative;
+  left: 58px;
+  top: 60px;
 }
-.main-triangle-container .s-8{
-    text-align: center;
-    width: 70px;
-    z-index: 10;
-    position: absolute;
-    bottom: 27px;
-    left: 45px;
+.main-triangle-container .s-8 {
+  z-index: 100;
+  text-align: center;
+  font-weight: bold;
+  width: fit-content;
+  position: relative;
+  left: 58px;
+  top: -43px;
 }
-/* circle */
-.main-circle-container{
-    margin: auto;
-    margin-top: 30px;
-    background-color: rgb(177, 141, 207);
-    width: 55%;
-    height: 240px;
-    padding: 5px;
-    padding-left: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 5px 5px 8px rgb(132, 106, 153);
+/* circulo */
+.main-circle-container {
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(177, 141, 207);
+  width: fit-content;
+  height: 240px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
-.main-circle-container input{
-    font-family: monospace;
-    width: 250px;
-    height: 20px;
-    border-radius: 2px;
-    border-style: none;
-    background-color: rgb(217, 202, 230);
+.main-circle-container input {
+  font-family: monospace;
+  width: 250px;
+  height: 20px;
+  border-radius: 2px;
+  border-style: none;
+  background-color: rgb(217, 202, 230);
 }
-.main-circle-container button{
-    text-transform: uppercase;
-    font-family: monospace;
-    height: 22px;
-    border-style: none;
-    border-radius: 2px;
-    background-color: rgb(217, 202, 230);
-    transition: 0.2s;
+.main-circle-container button {
+  text-transform: uppercase;
+  font-family: monospace;
+  height: 22px;
+  border-style: none;
+  border-radius: 2px;
+  background-color: rgb(217, 202, 230);
+  transition: 0.2s;
 }
-.main-circle-container button:hover{
-    transform: scale(1.05);
-    background-color: rgb(232, 220, 242);
+.main-circle-container button:hover {
+  transform: scale(1.05);
+  background-color: rgb(232, 220, 242);
 }
-.main-circle-container h2{
-    text-transform: uppercase;
-    text-shadow: 1px 1px 5px rgb(94, 29, 148);
+.main-circle-container h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgb(94, 29, 148);
 }
-.main-circle-container .main-size-container{
-    width: fit-content;
-    border-radius: 5px;
-    margin-top: 20px;
-    padding: 1px 8px 5px 8px;
-    height: 95px;
-    background-color:rgb(198, 169, 222);
+.main-circle-container .main-content{
+  position: relative;
+  top: -100px;
 }
-.main-circle-container .circle-container{
+.main-circle-container .s-container{
+  position: relative;
+  left: 360px;
+  top: 50px;
+  width: 100px;
+  height: 100px;
+}
+.main-circle-container .main-size-container {
+  width: fit-content;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 1px 8px 5px 8px;
+  height: 95px;
+  background-color: rgb(198, 169, 222);
+}
+.main-circle-container .circle-container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 0;
+  background-color: rebeccapurple;
+  border: 5px solid rgb(48, 14, 78);
+  border-radius: 50%;
+}
+.circle-container hr {
+  position: relative;
+  top: 40px;
+  left: 25px;
+  width: 50%;
+  border: 2px solid rgb(48, 14, 78);
+  background-color: rgb(48, 14, 78);
+}
+.main-circle-container .s-container .s-10 {
+  font-weight: bold;
+  position: relative;
+  width: fit-content;
+  top: -85px; 
+  left: 52px;
+}
+/* mobile-square */
+@media (max-width: 500px) {
+  .cuadrado-container {
+    position: relative !important;
     width: 150px;
     height: 150px;
-    position: absolute;
-    top: 720px;
-    right: 310px;
-    background-color: rebeccapurple;
-    border: 5px solid rgb(48, 14, 78);
-    border-radius: 50%;
+    left: 0 !important;
+    top: 0 !important;
+    margin: 10px !important;
+  }
+  .main-square-container .s-container {
+    position: relative !important;
+    top: 10px !important;
+    left: 0px;
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .main-square-container .s-1 {
+    position: relative !important;
+    margin: auto !important;
+    width: fit-content !important;
+    top: -190px !important;
+    left: auto !important;
+  }
+  .main-square-container .s-2 {
+    transform: rotate(270deg) !important;
+    position: relative !important;
+    margin: auto !important;
+    width: fit-content !important;
+    top: -105px !important;
+    left: -88px !important;
+  }
+  .main-square-container .s-3 {
+    position: relative !important;
+    margin: auto !important;
+    width: fit-content !important;
+    top: -125px !important;
+    left: 88px !important;
+  }
+  .main-square-container .s-4 {
+    position: relative !important;
+    margin: auto !important;
+    width: fit-content !important;
+    top: -58px !important;
+    transform: rotate(360deg) !important;
+    left: auto !important;
+  }
+  .main-square-container button {
+    margin-top: 5px !important;
+  }
+  .main-square-container .main-size-container {
+    height: 100px !important;
+    margin: auto !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .main-square-container .text {
+    position: relative;
+    top: 0;
+  }
+  .main-square-container .main-content {
+    position: relative;
+    top: 0;
+    margin: auto;
+  }
 }
-.circle-container hr{
-    position: absolute;
+@media (max-width: 500px) {
+  .main-title-container {
+    width: 100% !important;
+  }
+  .main-title-container h1 {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 500px) {
+  .main-square-container {
+    width: 80% !important;
+    position: relative !important;
+    box-shadow: none !important;
+    text-align: center !important;
+    padding: 10px !important;
+    height: fit-content !important;
+  }
+  .main-square-container h2 {
+    font-size: 15px !important;
+    margin-bottom: 20px !important;
+  }
+  .main-square-container p {
+    margin-bottom: 20px !important;
+  }
+  .main-square-container input {
+    width: 90% !important;
+    margin-bottom: 10px !important;
+    text-align: center !important;
+  }
+}
+/* mobile-triangle */
+@media (max-width: 500px) {
+  .main-triangle-container {
+    position: relative;
+    width: 80%;
+    box-shadow: none;
+    text-align: center;
+    padding: 10px;
+    height: fit-content;
+  }
+  .main-triangle-container h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .main-triangle-container p {
+    margin-bottom: 20px;
+  }
+  .main-triangle-container input {
+    width: 90%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .main-triangle-container button {
+    position: relative;
     top: 65px;
-    right: 0px;
-    width: 50%;
-    border: 2px solid rgb(48, 14, 78);
-    background-color: rgb(48, 14, 78);;
+    left: auto;
+    margin-top: 5px;
+  }
+  .main-triangle-container .base {
+    position: relative;
+    bottom: 25px;
+  }
+  .main-triangle-container .altura {
+    position: relative;
+    bottom: 25px;
+  }
 }
-.circle-container .s-10{
+@media (max-width: 500px) {
+  .main-triangle-container .s-container {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .triangle-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200px;
+  }
+  .triangle-container .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 150px solid rebeccapurple;
+    position: relative;
+    top: 30px;
+    margin: auto;
+  }
+  .triangle-container .border {
+    width: 0;
+    height: 0;
+    border-left: 115px solid transparent;
+    border-right: 115px solid transparent;
+    border-bottom: 160px solid rgb(48, 14, 78);
+    position: relative;
+    margin: auto;
+    top: -125.6px;
+    left: 0;
+  }
+  .triangle-container hr {
+    position: relative;
+    left: 0;
+    top: -165px;
+  }
+  .triangle-container .hr1 {
+    position: relative;
     width: 70px;
-    position: absolute;
-    top: 55px;
-    left: 72px;
+    left: 0;
+    top: -265px;
+  }
+  .main-triangle-container .main-size-container {
+    position: relative;
+    top: -10px;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    padding: 5px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+  .main-triangle-container .main-content {
+    position: relative;
+    top: 0;
+  }
+  .s-container .s-5 {
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    top: -115px;
+    left: -60px;
+    font-weight: bold;
+    transform: rotate(308deg);
+  }
+  .s-container .s-6 {
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    top: -130px;
+    left: 60px;
+    font-weight: bold;
+    transform: rotate(55deg);
+  }
+  .s-container .s-7 {
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    top: -45px;
+    left: 0px;
+    font-weight: bold;
+    transform: rotate(360deg);
+  }
+  .s-container .s-8 {
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    top: -140px;
+    left: 0;
+    font-weight: bold;
+    transform: rotate(360deg);
+  }
+}
+/* mobile-circle */
+@media (max-width: 500px) {
+  .main-circle-container {
+    width: 80%;
+    box-shadow: none;
+    text-align: center;
+    height: fit-content;
+    padding: 10px;
+  }
+  .main-circle-container h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center !important;
+  }
+  .circle-container {
+    position: relative !important;
+    left: 0;
+    top: 0 !important;
+    width: 150px !important;
+    height: 150px !important;
+    margin: auto;
+  }
+  .main-circle-container .s-container{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .main-circle-container .s-container hr{
+    position: relative;
+    top: 65px;
+    left: 35px;
+  }
+  .main-circle-container .main-content{
+    position: relative;
+    top: 0;
+  }
+  .main-circle-container .text {
+    margin: auto;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .main-circle-container .main-size-container {
+    height: fit-content;
+    margin-bottom: 10px;
+  }
+  .main-circle-container .main-size-container p {
+    font-size: 14px;
+  }
+  .main-circle-container input {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .area {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .circunf {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .diametro {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .s-10 {
+    margin: auto;
+    width: fit-content;
+    font-weight: bold;
+    left: 10px !important;
+    position: relative;
+    top: -100px !important;
+  }
+  .main-circle-container .s-container {
+    position: relative;
+    margin: auto;
+    height: 200px;
+  }
 }

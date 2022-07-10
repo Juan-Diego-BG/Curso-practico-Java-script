@@ -5,87 +5,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculadora</title>
   </head>
   <body>
+    <!-- cabecera -->
     <div class="main-title-container">
       <h1>Calculadora de Figuras Geométricas</h1>
     </div>
+    <!-- sección del cuadrado -->
     <div class="main-square-container">
       <h2>Calcula el área y perimetro de un cuadrado!</h2>
-      <div class="cuadrado-container">
-        <span class="s-1"></span>
-        <span class="s-2"></span>
-        <span class="s-3"></span>
-        <span class="s-4"></span>
+      <div class="s-container">
+        <span class="cuadrado-container"> </span>
+        <p class="s-1"></p>
+        <p class="s-2"></p>
+        <p class="s-3"></p>
+        <p class="s-4"></p>
       </div>
-      <p>inserta las medidas de tu cuadrado! recuerda insertar solo números.</p>
-      <input type="text" placeholder="inserta los lados" />
-      <button onclick="funcionPrueba()">calcular</button>
-      <div class="main-size-container">
-        <p>
-          el perimetro de tu cuadrado mide:
-          <b><span class="prueba-1">--</span>cm</b>
-        </p>
-        <p>
-          el área de tu cuadrado mide:
-          <b><span class="prueba-2">--</span>cm^2</b>
-        </p>
+      <p class="text">
+        inserta las medidas de tu cuadrado! recuerda insertar solo números.
+      </p>
+      <div class="main-content">
+        <input type="text" placeholder="inserta los lados" />
+        <button onclick="funcionPrueba()">calcular</button>
+        <div class="main-size-container">
+          <p>
+            el perimetro de tu cuadrado mide:
+            <b><span class="prueba-1">--</span>cm</b>
+          </p>
+          <p>
+            el área de tu cuadrado mide:
+            <b><span class="prueba-2">--</span>cm^2</b>
+          </p>
+        </div>
       </div>
     </div>
-
+    <!-- sección del triangulo -->
     <div class="main-triangle-container">
       <h2>Calcula el área y perimetro de un triangulo!</h2>
-      <div class="triangle-container">
-        <div class="arrow-up"></div>
-        <div class="border"></div>
-        <hr>
-        <hr class="hr1">
-        <b><span class="s-5"></span></b>
-        <b><span class="s-6"></span></b>
-        <b><span class="s-7"></span></b>
-        <b><span class="s-8"></span></b>
+      <div class="s-container">
+        <div class="triangle-container">
+          <div class="arrow-up"></div>
+          <div class="border"></div>
+          <hr />
+          <hr class="hr1" />
+        </div>
+        <p class="s-5"></p>
+        <p class="s-6"></p>
+        <p class="s-7"></p>
+        <p class="s-8"></p>
       </div>
-      <p>inserta los lados de tu triangulo! recuerda insertar solo números.</p>
-      <input type="text" placeholder="inserta los lados" class="input-1" /> <br>
-      <input type="text" placeholder="inserta los lados" class="input-2" />
-      <button onclick="triangleFunction()">calcular</button> <br />
-      <input type="text" placeholder="inserta la base" class="base" /> <br>
-      <input type="text" placeholder="inserta la altura" class="altura" />
-      <div class="main-size-container">
-        <p>
-          el perimetro de tu triangulo mide:
-          <b><span class="prueba-3">--</span>cm</b>
+      <div class="main-content">
+        <p class="calcula">
+          inserta los lados de tu triangulo! recuerda insertar solo números.
         </p>
-        <p>
-          el área de tu triangulo mide:
-          <b><span class="prueba-4">--</span>cm^2</b>
-        </p>
+        <input type="text" placeholder="inserta los lados" class="input-1" />
+        <br />
+        <input type="text" placeholder="inserta los lados" class="input-2" />
+        <button onclick="triangleFunction()">calcular</button> <br />
+        <input type="text" placeholder="inserta la base" class="base" /> <br />
+        <input type="text" placeholder="inserta la altura" class="altura" />
+        <div class="main-size-container">
+          <p>
+            el perimetro de tu triangulo mide:
+            <b><span class="prueba-3">--</span>cm</b>
+          </p>
+          <p>
+            el área de tu triangulo mide:
+            <b><span class="prueba-4">--</span>cm^2</b>
+          </p>
+        </div>
       </div>
     </div>
-
+    <!-- sección del circulo -->
     <div class="main-circle-container">
       <h2>Calcula el área, diametro y circunferencia de un circulo!</h2>
-      <div class="circle-container">
-        <hr>
-        <b><span class="s-10"></span></b>
+      <div class="s-container">
+        <div class="circle-container">
+          <hr />
+        </div>
+        <p class="s-10"></p>
       </div>
-      <p>inserta el radio de tu circulo! recuerda insertar solo números.</p>
-      <input type="text" placeholder="inserta el radio" class="input-circle" />
-      <button onclick="circleFunction()">calcular</button>
-      <div class="main-size-container">
-        <p>
-          el diametro de tu circulo mide:
-          <b><span class="prueba-6">--</span>cm</b>
+      <div class="main-content">
+        <p class="text">
+          inserta el radio de tu circulo! recuerda insertar solo números.
         </p>
-        <p>
-          el área de tu circulo mide:
-          <b><span class="prueba-7">--</span>cm</b>
-        </p>
-        <p>
-          la circunferencia de tu circulo mide:
-          <b><span class="prueba-8">--</span>cm^2</b>
-        </p>
+        <input type="text" placeholder="inserta el radio" class="input-circle" />
+        <button onclick="circleFunction()">calcular</button>
+        <div class="main-size-container">
+          <p class="diametro">
+            el diametro de tu circulo mide:
+            <b><span class="prueba-6">--</span>cm</b>
+          </p>
+          <p class="area">
+            el área de tu circulo mide:
+            <b><span class="prueba-7">--</span>cm</b>
+          </p>
+          <p class="circunf">
+            la circunferencia de tu circulo mide:
+            <b><span class="prueba-8">--</span>cm^2</b>
+          </p>
+        </div>
       </div>
     </div>
     <script src="./figuras.js"></script>
