@@ -307,11 +307,11 @@ h1 {
   text-transform: uppercase;
   text-shadow: 1px 1px 5px rgb(94, 29, 148);
 }
-.main-circle-container .main-content{
+.main-circle-container .main-content {
   position: relative;
   top: -100px;
 }
-.main-circle-container .s-container{
+.main-circle-container .s-container {
   position: relative;
   left: 360px;
   top: 50px;
@@ -347,7 +347,7 @@ h1 {
   font-weight: bold;
   position: relative;
   width: fit-content;
-  top: -85px; 
+  top: -85px;
   left: 52px;
 }
 /* mobile-square */
@@ -606,19 +606,19 @@ h1 {
     height: 150px !important;
     margin: auto;
   }
-  .main-circle-container .s-container{
+  .main-circle-container .s-container {
     position: relative;
     margin: auto;
     width: 100%;
     left: 0;
     top: 0;
   }
-  .main-circle-container .s-container hr{
+  .main-circle-container .s-container hr {
     position: relative;
     top: 65px;
     left: 35px;
   }
-  .main-circle-container .main-content{
+  .main-circle-container .main-content {
     position: relative;
     top: 0;
   }
